@@ -1,0 +1,27 @@
+.ball {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  position: absolute;
+  border-radius: 50%;
+  animation-name: ball;
+  animation-duration: 10s;
+
+  animation: ball 5s infinite;
+}
+
+@keyframes ball {
+  to,
+  from {
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    top: 0px;
+    left: 100px;
+  }
+  50% {
+    top: 100px;
+    left: 100px;
+  }
+}

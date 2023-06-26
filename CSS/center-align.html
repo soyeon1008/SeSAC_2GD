@@ -10,15 +10,18 @@
         height: 300px;
         background-color: aquamarine;
       }
+
       .child {
         width: 100px;
         height: 100px;
         background-color: hotpink;
       }
+
       /* position 과 margin: auto */
       .parent1 {
         position: relative;
       }
+
       .parent1 > .child {
         position: absolute;
         margin: auto;
@@ -27,18 +30,42 @@
         top: 0;
         bottom: 0;
       }
+
+      /* flex 이용한 가운데 정렬 */
+      .parent2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .parent2 > .child {
+      }
+
+      /* position & transform */
+      .parent3 {
+        position: relative;
+      }
+      .parent3 > .child {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
     </style>
   </head>
   <body>
     <h1>div 안에 div 가운데 정렬하기</h1>
+
     <h3>1. position과 margin:auto</h3>
     <div class="parent parent1">
       <div class="child"></div>
     </div>
+
     <h3>2. flex</h3>
     <div class="parent parent2">
       <div class="child"></div>
     </div>
+
     <h3>3. position 과 transform</h3>
     <div class="parent parent3">
       <div class="child"></div>

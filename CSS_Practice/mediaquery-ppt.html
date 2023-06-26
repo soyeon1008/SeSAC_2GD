@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미디어쿼리 실습</title>
+    <style>
+      @font-face {
+        font-family: "omyu_pretty";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2")
+          format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @media screen and (min-width: 500px) {
+        body {
+          background-color: skyblue;
+        }
+      }
+      /* 300px 이하일 경우 배경색이 오렌지 */
+      @media screen and (max-width: 300px) {
+        body {
+          background-color: orange;
+        }
+      }
+      /* 화면높이 300px을 기준 으로 300px 이하일 경우 <p> 태그의 폰트를 변경 하고 , 500px 이상일 경우 배경색이 초록색 */
+      @media screen and (max-height: 300px) {
+        body {
+          font-family: "omyu_pretty";
+        }
+      }
+      @media screen and (min-height: 500px) {
+        body {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>미디어쿼리 실습</p>
+  </body>
+</html>
