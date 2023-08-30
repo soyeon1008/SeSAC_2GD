@@ -7,12 +7,14 @@ import ClassState from "./components/ClassState.jsx";
 import StatePractice from "./components/prac/StatePractice.jsx";
 import FunctionProps from "./components/prac/FunctionProps.jsx";
 import PracticeProps from "./components/prac/PracticeProps.jsx";
-import { ClassProps, ClassProps2 } from "./components/ClassProps";
+import { ClassProps, ClassProps2 } from "./components/ClassProps.jsx";
+import Handler_ex1 from "./components/prac/Handler_ex1.js";
+import Handler_ex2 from "./components/prac/Handler_ex2.js";
 
 function App() {
   return (
     <div>
-      <UseJSX />
+      {/* <UseJSX />
       <FirstPractice />
       <ClassCom></ClassCom>
       <FunctionState></FunctionState>
@@ -24,7 +26,9 @@ function App() {
       <FunctionProps>여기가 children입니다!</FunctionProps>
       <PracticeProps />
       <ClassProps name="뽀로로" nickname="사고뭉치" color="#0186cb" />
-      <ClassProps2 name="루피" nickname="공주" bgColor="#ed9095" />
+      <ClassProps2 name="루피" nickname="공주" bgColor="#ed9095" /> */}
+      <Handler_ex1 />
+      <Handler_ex2 />
     </div>
   );
 }
