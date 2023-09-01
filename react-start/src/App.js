@@ -10,6 +10,13 @@ import PracticeProps from "./components/prac/PracticeProps.jsx";
 import { ClassProps, ClassProps2 } from "./components/ClassProps.jsx";
 import Handler_ex1 from "./components/prac/Handler_ex1.js";
 import Handler_ex2 from "./components/prac/Handler_ex2.js";
+import DOMComponent from "./components/DOMComponent.js";
+import RefPractice_ex1 from "./components/prac/RefPractice_ex1.js";
+import RefPractice_ex2 from "./components/prac/RefPractice_ex2.js";
+import RefVarState from "./components/RefVarState.js";
+import TimerComponent from "./components/TimerComponent.js";
+import EffectComponent from "./components/EffectComponent.js";
+import PracticeTimer from "./components/prac/PracticeTimer.js";
 
 function App() {
   return (
@@ -27,8 +34,17 @@ function App() {
       <PracticeProps />
       <ClassProps name="뽀로로" nickname="사고뭉치" color="#0186cb" />
       <ClassProps2 name="루피" nickname="공주" bgColor="#ed9095" /> */}
-      <Handler_ex1 />
-      <Handler_ex2 />
+      {/* <Handler_ex1 /> */}
+      {/* <Handler_ex2 /> */}
+      <DOMComponent />
+      <br />
+      <RefPractice_ex1 />
+      <RefPractice_ex2 />
+      <RefVarState />
+      <br />
+      <TimerComponent />
+      <EffectComponent />
+      <PracticeTimer />
     </div>
   );
 }
