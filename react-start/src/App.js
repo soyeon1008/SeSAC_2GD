@@ -17,11 +17,31 @@ import RefVarState from "./components/RefVarState.js";
 import TimerComponent from "./components/TimerComponent.js";
 import EffectComponent from "./components/EffectComponent.js";
 import PracticeTimer from "./components/prac/PracticeTimer.js";
+import PropsMap from "./components/PropsMap.jsx";
+import PracticeMap from "./components/prac/PracticeMap.jsx";
+import MapChild from "./components/prac/MapChild.jsx";
+import PororoObj from "./components/prac/PororoObj.jsx";
+import BasicCss from "./components/BasicCss.jsx";
 
 function App() {
+  const dataArr = [
+    { name: "peach", krPrice: 10000, count: 5 },
+    { name: "strawberry", krPrice: 14000, count: 1 },
+    { name: "pear", krPrice: 5000, count: 6 },
+    { name: "apple", krPrice: 10000, count: 10 },
+    { name: "mango", krPrice: 20000, count: 2 },
+  ];
   return (
-    <div>
-      {/* <UseJSX />
+    <>
+      {/* <PropsMap arr={dataArr} />
+      <PracticeMap />
+      <PororoObj /> */}
+      <BasicCss />
+    </>
+  );
+
+  <div>
+    {/* <UseJSX />
       <FirstPractice />
       <ClassCom></ClassCom>
       <FunctionState></FunctionState>
@@ -33,20 +53,22 @@ function App() {
       <FunctionProps>여기가 children입니다!</FunctionProps>
       <PracticeProps />
       <ClassProps name="뽀로로" nickname="사고뭉치" color="#0186cb" />
-      <ClassProps2 name="루피" nickname="공주" bgColor="#ed9095" /> */}
-      {/* <Handler_ex1 /> */}
+    <ClassProps2 name="루피" nickname="공주" bgColor="#ed9095" /> */}
+    {/*  <Handler_ex1 /> 
       {/* <Handler_ex2 /> */}
-      <DOMComponent />
-      <br />
-      <RefPractice_ex1 />
-      <RefPractice_ex2 />
-      <RefVarState />
-      <br />
-      <TimerComponent />
-      <EffectComponent />
-      <PracticeTimer />
-    </div>
-  );
+    {/* <DOMComponent /> */}
+    {/* <br />
+      {/* <RefPractice_ex1 /> */}
+    {/* <RefPractice_ex2 /> */}
+    {/* <RefVarState /> */}
+    <br />
+    {/* <TimerComponent /> */}
+    {/* <EffectComponent />
+      <PracticeTimer />  */}
+    <PropsMap />
+    <PracticeMap />
+    <MapChild />
+  </div>;
 }
 
 export default App;
