@@ -22,6 +22,9 @@ import PracticeMap from "./components/prac/PracticeMap.jsx";
 import MapChild from "./components/prac/MapChild.jsx";
 import PororoObj from "./components/prac/PororoObj.jsx";
 import BasicCss from "./components/BasicCss.jsx";
+import "./styles/style.scss";
+import UseScss from "./components/UseScss.jsx";
+import UseMemoObj from "./components/05_UseMemoObj.jsx";
 
 function App() {
   const dataArr = [
@@ -36,7 +39,9 @@ function App() {
       {/* <PropsMap arr={dataArr} />
       <PracticeMap />
       <PororoObj /> */}
-      <BasicCss />
+      {/* <BasicCss /> */}
+      <UseScss />
+      <UseMemoObj />
     </>
   );
 
