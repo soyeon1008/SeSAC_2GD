@@ -25,6 +25,9 @@ import BasicCss from "./components/BasicCss.jsx";
 import "./styles/style.scss";
 import UseScss from "./components/UseScss.jsx";
 import UseMemoObj from "./components/05_UseMemoObj.jsx";
+import UseCallback from "./components/06_UseCallback.jsx";
+import UseReducer from "./components/07_UseReducer.jsx";
+import ContextTheme from "./components/08_ContextTheme.jsx";
 
 function App() {
   const dataArr = [
@@ -40,8 +43,11 @@ function App() {
       <PracticeMap />
       <PororoObj /> */}
       {/* <BasicCss /> */}
-      <UseScss />
-      <UseMemoObj />
+      {/* <UseScss /> */}
+      {/* <UseMemoObj /> */}
+      <UseCallback />
+      <UseReducer />
+      <ContextTheme />
     </>
   );
 
